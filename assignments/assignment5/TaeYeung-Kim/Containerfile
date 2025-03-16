@@ -1,0 +1,5 @@
+FROM openjdk:11-jdk-slim
+WORKDIR /app
+COPY Greetings.java /app/Greetings.java
+RUN javac Greetings.java
+CMD ["java", "Greetings"]

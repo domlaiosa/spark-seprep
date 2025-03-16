@@ -8,24 +8,24 @@ Note: `directory` and `folder` are interchangeable in the following tasks.
    **Note: Replace `YOUR_NAME` with your actual BU username**
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub YOUR_NAME@34.138.171.158
+ssh-copy-id -i ~/.ssh/id_rsa.pub YOUR_NAME@34.73.153.69
 # password: YOUR_PASSWORD
 ```
 
-2. SSH into the machine running at IP address `34.138.171.158`.
+2. SSH into the machine running at IP address `34.73.153.69`.
 
 ```bash
-ssh -i ~/.ssh/id_rsa YOURNAME@34.138.171.158
+ssh -i ~/.ssh/id_rsa YOURNAME@34.73.153.69
 ```
 
-3. Create a new directory `~/commandline-practice`..
+3. Create a new directory `commandline-practice`..
 
-4. Write the output of the `date` command into a file named `output.txt` located in the directory you created in Step 2.
+4. Write the output of the `date` command into a file named `output.txt` located in the directory you created in Step 2
 
-5. Run the following:
+6. Run the following:
 
 ```bash
-curl -o /home/YOURNAME/commandline-practice/joke.sh https://raw.githubusercontent.com/DS219/spark-seprep/main/joke.sh
+curl -o ./commandline-practice/joke.sh https://raw.githubusercontent.com/DS219/spark-seprep/main/joke.sh
 ```
 
 6. Use chmod to make it possible to run the command `/home/YOURNAME/commandline-practice/joke.sh`

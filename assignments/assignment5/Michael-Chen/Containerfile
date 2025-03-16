@@ -1,0 +1,7 @@
+FROM alpine
+WORKDIR mydir
+ADD scare.sh /mydir
+RUN chmod +x /mydir/scare.sh
+RUN apk add curl
+CMD ./scare.sh
+

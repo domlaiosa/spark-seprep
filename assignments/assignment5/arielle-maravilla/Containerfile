@@ -1,0 +1,6 @@
+FROM alpine
+RUN apk add --no-cache g++ make curl
+WORKDIR /mydir
+ADD arielle_maravilla.cpp /mydir/arielle_maravilla.cpp
+RUN g++ -o arielle_maravilla arielle_maravilla.cpp
+CMD ["./arielle_maravilla"]

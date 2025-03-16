@@ -16,6 +16,11 @@ Create a new branch for this assignment.
 git checkout -b assignment4
 ```
 
+Check that you are in the correct branch. The assignment4 branch should be in green and have an asteriks next to it.
+```
+git branch
+```
+
 **Assignment**
 
 1. **Pick any easy category question from [LeetCode](https://leetcode.com/):**
@@ -53,9 +58,9 @@ git checkout -b assignment4
 
 2. **Create a directory in GitHub:**
 
-   - Navigate to: `https://github.com/DS219/spark-seprep/tree/main/assignments/assignment4/<your_name>`
-   - Replace `<your_name>` with your actual name in the format `firstname-lastname`.
-   - Create this directory in the repo if it doesn’t exist yet.
+   - Navigate to: `spark-seprep/assignments/assignment4`
+   - Create a new directory here with your name using `mkdir <firstname-lastname>`
+   - Enter this directory for the assignment `cd <firstname-lastname>`
 
 3. **Add the Python file to your directory:**
    
@@ -73,5 +78,7 @@ git checkout -b assignment4
    - Used a dictionary to store previously encountered numbers and their indices for O(n) time complexity.
    - Tested the solution with a sample input [2, 7, 11, 15] and target = 9, returning correct indices [0, 1].
    ```
+
+5. **Create the a PR against the DS219/spark-seprep repository like you did in assignment3**
 
 **Note: For your assignment, do not use the example already used here to help describe the assignment. Pick any other leetcode question from the easy category.**

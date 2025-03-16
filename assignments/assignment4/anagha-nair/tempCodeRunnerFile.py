@@ -1,0 +1,1 @@
+print(solution.isPalindrome(121))

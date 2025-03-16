@@ -1,0 +1,13 @@
+FROM alpine
+WORKDIR mydir
+ADD pokemon.py /mydir
+
+
+RUN apk add --no-cache python3 py3-pip curl
+RUN pip install --break-system-packages requests
+
+ 
+RUN chmod +x /mydir/pokemon.py
+
+CMD ["python3", "pokemon.py"]
+
